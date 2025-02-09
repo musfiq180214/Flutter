@@ -38,7 +38,11 @@ class LoginScreen extends StatelessWidget {
 
                   Align(
                     alignment: Alignment.bottomRight,
-                    child: TextButton(onPressed: (){},
+                    child: TextButton(
+                        onPressed: (){
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => ForgotScreen(),
+                      ))
+                    },
                         child: Text(
                             "Forgot Password",
                           style: TextStyle(
