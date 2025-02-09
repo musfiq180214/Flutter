@@ -2,6 +2,8 @@ import 'package:ecommerce/screens/home_screen.dart';
 import 'package:ecommerce/screens/signup_screen.dart';
 import 'package:flutter/material.dart';
 
+import 'forgot_screen.dart';
+
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -41,7 +43,7 @@ class LoginScreen extends StatelessWidget {
                     child: TextButton(
                         onPressed: (){
                       Navigator.push(context, MaterialPageRoute(builder: (context) => ForgotScreen(),
-                      ))
+                      ));
                     },
                         child: Text(
                             "Forgot Password",
